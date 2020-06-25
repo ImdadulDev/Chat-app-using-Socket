@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".views.MapActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_map" />
+
+
+    <RelativeLayout
+        android:id="@+id/RLfooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_footer">
+
+        <View
+            android:id="@+id/vdiv"
+            android:layout_width="2px"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="#c2c2c2" />
+
+        <TextView
+            android:id="@+id/TXT_SignIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/vdiv"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="#091C3D"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/TXT_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_toRightOf="@+id/vdiv"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#091C3D"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RLfooter"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Call Worldwide"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_21sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:text="Get in touch with your loved ones around the world"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

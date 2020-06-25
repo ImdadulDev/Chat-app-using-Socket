@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0C80EE</color>
+    <color name="colorPrimaryDark">#0C80EE</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="orange_light" type="color">#FFCF6F</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+
+    <color name="colorAccentLight">#c84241</color>
+    <color name="textColorPrimary">#222322</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="textColorSubtitle">#575757</color>
+    <color name="colorControlActivated">#c84241</color>
+    <color name="colorControlDefault">#444444</color>
+    <color name="colorWindowBackground">#eeeeee</color>
+    <color name="colorOnline">#149214</color>
+    <color name="colorOffline">#7E7D7D</color>
+    <color name="colorBorder">#4D838282</color>
+
+    //Documented color
+    <color name="black">#000000</color>
+    <color name="blue_700">#2E9FFF</color>
+    <color name="blue_100">#D0E5FF</color>
+    <color name="blue_300">#A9CDFA</color>
+    <color name="blue_200">#A9CDFA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_80">#F4F4F4</color>
+    <color name="green_white">#7CB342</color>
+    <color name="purple_deep">#7B1FA2</color>
+    <color name="pink_deep">#C2185B</color>
+    <color name="black_500">#66000000</color>
+    <color name="black_700">#5C5C5C</color>
+    <color name="black_800">#4B4B4B</color>
+    <color name="login_btn">#49ABFF</color>
+
+
+    <color name="green_100">#007524</color>
+    <color name="green_light_70">#0FB843</color>
+    <color name="green_light_100">#00AE35</color>
+    <color name="violet_deep">#542DA6</color>
+    <color name="grey_deep">#4E6773</color>
+    <color name="red_deep">#B51F1F</color>
+    <color name="grey_dark">#232E33</color>
+    <color name="magnato_dark">#B33C60</color>
+
+    //my picked color
+    <color name="black_overlay">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_50">#4D000000</color>
+    <color name="transparent_40">#2F000000</color>
+    <color name="transparent_white_30">#A6E25383</color>
+    <color name="transparent_blue_50">#C80066FF</color>
+    <color name="light_yellow">#D7FFF7D9</color>
+    <color name="grey">#BEECECEC</color>
+    <color name="grey_10">#F0F0F0</color>
+    <color name="grey_15">#E7E7E7</color>
+    <color name="grey_50">#B3B3B3</color>
+    <color name="grey_500">#797979</color>
+    <color name="grey_20">#DADADA</color>
+    <color name="cyan">#00D3EE</color>
+    <color name="yellow_30">#FFF0A7</color>
+    <color name="chat_bg">#ECF3FD</color>
+    <color name="chat_send_bg">#E4EBF5</color>
+</resources>

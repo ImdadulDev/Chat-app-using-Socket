@@ -1,0 +1,16 @@
+package com.cbc.views.chatdemo;
+
+public class Constants {
+    public static final String CHAT_BASE_URL = "https://nodeserver.brainiuminfotech.com:3011/api/";
+    public static final String CHAT_SERVER_URL = "https://socket-io-chat.now.sh/";
+    public static final String CHAT_SOCKET_SERVER_URL = "https://nodeserver.brainiuminfotech.com:3011/";
+    public static final String USER_ID = "5e71ab6a4d8ce46c305dd37d";
+    public static final String REMOTE_USER_ID = "5e819e844d8ce46c305dd707";
+    public static final String KIRON_REMOTE_USER_ID = "5e8199f54d8ce46c305dd515";
+    public static final String CHAT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlNzFhYzNmNWU1MTFmNzM3ZTExYjBkNiIsInVzZXJJZCI6IjVlNzFhYjZhNGQ4Y2U0NmMzMDVkZDM3ZCIsImF1dGhUb2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNklqVmxOekZoWWpaaE5HUTRZMlUwTm1Nek1EVmtaRE0zWkNJc0ltbGhkQ0k2TVRVNE5UVTBOak0xTUN3aVpYaHdJam94TlRnMU5qTXlOelV3ZlEuOHNVOVBINjl5T0FCQzJOVU5WNDF4cTR0em1rTVZtWmtFQ01EMlBfbk93NCIsImlhdCI6MTU4NTU0NjM1MCwiZXhwIjoxNTg1NjMyNzUwfQ.4buep8Mzx4S2J0CqqV3Oi5NC95YzxFqJg8izq47VLmg";
+}
+
+
+// connect -> userappearonline (on) ->
+//chat receive : chatReciveRemoteuser(on) ->
+//pushNewMessage (on) ->

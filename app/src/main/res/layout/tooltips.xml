@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:text="Password length will be 6 to 8 characters. One Upper Case One Lower Case along with the special character.">
+
+</TextView>

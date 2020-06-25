@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1026264904089",
+    "firebase_url": "https://cbcapp-8eb62.firebaseio.com",
+    "project_id": "cbcapp-8eb62",
+    "storage_bucket": "cbcapp-8eb62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026264904089:android:305a7e51066343aba9e308",
+        "android_client_info": {
+          "package_name": "com.cbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026264904089-ka1gdngk48n1f5lbqdrihqa6bc0bv8jn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cbc",
+            "certificate_hash": "2b4fc788d1de8dc4125ec70fcae7159d26ad9ab7"
+          }
+        },
+        {
+          "client_id": "1026264904089-1aloaf8d50cof8s90019fu403t25gb3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8RZiiiy2XUMOH4jqZ8owZngMfusIJgcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026264904089-1aloaf8d50cof8s90019fu403t25gb3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

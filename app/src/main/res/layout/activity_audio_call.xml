@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivUnderUserImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_chat_user"
+        android:contentDescription="@string/description" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_blue_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".views.ui.activities.AudioCallActivity">
+
+        <ImageView
+            android:id="@+id/ivAboveUserImg"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:srcCompat="@drawable/img_chat_user" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/raleway_regular"
+            android:text="Jackson"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivAboveUserImg"
+            app:layout_constraintStart_toStartOf="@+id/ivAboveUserImg"
+            app:layout_constraintTop_toBottomOf="@+id/ivAboveUserImg" />
+
+        <TextView
+            android:id="@+id/tvCallingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_regular"
+            android:text="10:10 PM"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvUserName"
+            app:layout_constraintStart_toStartOf="@+id/tvUserName"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+        <ImageView
+            android:id="@+id/ivRecCall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/ivReceiveAndEndCallImg"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/ivAboveUserImg"
+            app:layout_constraintTop_toBottomOf="@+id/tvCallingTime"
+            app:srcCompat="@drawable/microphone_icon" />
+
+        <ImageView
+            android:id="@+id/ivReceiveAndEndCallImg"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/green_light_100"
+            android:padding="6dp"
+            android:elevation="6dp"
+            android:src="@drawable/ic_receive_call"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRecCall"
+            app:layout_constraintEnd_toStartOf="@+id/ivCallPutSpeaker"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivRecCall"
+            app:layout_constraintTop_toTopOf="@+id/ivRecCall" />
+
+        <ImageView
+            android:id="@+id/ivCallPutSpeaker"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/ivReceiveAndEndCallImg"
+            app:layout_constraintEnd_toEndOf="@+id/ivAboveUserImg"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivReceiveAndEndCallImg"
+            app:layout_constraintTop_toTopOf="@+id/ivReceiveAndEndCallImg"
+            app:srcCompat="@drawable/speaker_icon" />
+
+        <ImageView
+            android:id="@+id/ivVideoCall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/ivReceiveAndEndCallImg"
+            app:layout_constraintStart_toStartOf="@+id/ivReceiveAndEndCallImg"
+            app:layout_constraintTop_toBottomOf="@+id/ivReceiveAndEndCallImg"
+            app:srcCompat="@drawable/video_call_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+        android:contentDescription="@string/description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

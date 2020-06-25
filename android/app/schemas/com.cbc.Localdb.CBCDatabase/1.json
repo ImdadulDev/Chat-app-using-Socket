@@ -1,0 +1,64 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "4a6344fb40af36784779aa0f3f3d4c3a",
+    "entities": [
+      {
+        "tableName": "ContactEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`mobileno` TEXT NOT NULL, `display_name` TEXT, `quickbloxid` TEXT, `twilio_id` TEXT, `is_cbc_backedup` INTEGER NOT NULL, `cbc_id` TEXT NOT NULL, PRIMARY KEY(`mobileno`))",
+        "fields": [
+          {
+            "fieldPath": "mobileno",
+            "columnName": "mobileno",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "displayname",
+            "columnName": "display_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "quickbloxid",
+            "columnName": "quickbloxid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "twilio_id",
+            "columnName": "twilio_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "is_cbc_backedup",
+            "columnName": "is_cbc_backedup",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cbc_id",
+            "columnName": "cbc_id",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "mobileno"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4a6344fb40af36784779aa0f3f3d4c3a')"
+    ]
+  }
+}

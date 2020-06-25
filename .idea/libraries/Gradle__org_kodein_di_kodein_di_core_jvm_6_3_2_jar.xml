@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.kodein.di:kodein-di-core-jvm:6.3.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kodein.di/kodein-di-core-jvm/6.3.2/92d074e74d471dfe9855d4b8d23f26a723421f05/kodein-di-core-jvm-6.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kodein.di/kodein-di-core-jvm/6.3.2/8913a7c1dfd5e0dd4072aa6d492ec88f3031cbcc/kodein-di-core-jvm-6.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

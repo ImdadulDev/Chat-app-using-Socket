@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginTop="?actionBarSize"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    tools:context=".views.MobileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CBC will send an SMS message to verify your phone number"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EDX_COUNTRY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Choose a country" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EDX_COUNTRY_CODE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawableLeft="@drawable/ic_add_black_24dp"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/EDX_NUMBER"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:hint="phone number"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/BTN_NEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="NEXT"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

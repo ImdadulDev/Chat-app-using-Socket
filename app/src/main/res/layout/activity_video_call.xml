@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ui.activities.VideoCallActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_video_call_remote_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic_1"
+        android:contentDescription="@string/description" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/transparent_40"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_video_call_User"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/pic_5"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/iv_video_call_microphone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_video_call_speaker"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_video_call_speaker"
+            app:srcCompat="@drawable/video_call_microphone_icon"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/iv_video_call_speaker"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_video_call_call"
+            app:layout_constraintEnd_toStartOf="@+id/iv_video_call_call"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_video_call_microphone"
+            app:layout_constraintTop_toTopOf="@+id/iv_video_call_call"
+            app:srcCompat="@drawable/video_call_speaker_icon"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/iv_video_call_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_video_call_add_person"
+            app:layout_constraintEnd_toStartOf="@+id/iv_video_call_add_person"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_video_call_speaker"
+            app:layout_constraintTop_toTopOf="@+id/iv_video_call_add_person"
+            app:srcCompat="@drawable/video_call_call_end_icon" />
+
+        <ImageView
+            android:id="@+id/iv_video_call_add_person"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_video_call_video"
+            app:layout_constraintEnd_toStartOf="@+id/iv_video_call_video"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_video_call_call"
+            app:layout_constraintTop_toTopOf="@+id/iv_video_call_video"
+            app:srcCompat="@drawable/video_call_add_icon"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/iv_video_call_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_video_call_User"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_video_call_add_person"
+            app:layout_constraintTop_toTopOf="@+id/iv_video_call_User"
+            app:srcCompat="@drawable/video_call_camera_icon"
+            android:contentDescription="@string/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivVideoCallBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+        android:contentDescription="@string/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

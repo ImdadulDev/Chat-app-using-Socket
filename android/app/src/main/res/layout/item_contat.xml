@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_4sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/RL_IMG"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/FLOAT"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimaryDark"
+                app:elevation="0dp" />
+
+            <TextView
+                android:id="@+id/TXT_FIRST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="A"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_toLeftOf="@+id/LL_RIGHT"
+            android:layout_toRightOf="@+id/RL_IMG"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TXT_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/TXT_NUMBER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91555" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_RIGHT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_chat" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_telephone_line" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_video_camera" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

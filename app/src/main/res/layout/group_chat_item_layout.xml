@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp"
+    tools:background="@color/colorWindowBackground">
+
+    <FrameLayout android:id="@+id/layoutMyMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@id/guideOtherMessage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/group_chat_item_send_attachment_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/description" />
+
+        <LinearLayout
+            android:id="@+id/group_chat_send_ll_AttachmentImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:minWidth="200dp"
+            android:visibility="gone"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/ic_bg_chat"
+            android:layout_gravity="end|top">
+
+            <TextView
+                android:id="@+id/groupChatSendAttachmentImgTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                tools:text="Jackson"
+                android:textSize="15sp"
+                android:fontFamily="@font/raleway_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/groupChatSendAttachmentImgTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                tools:text="10:00 am"
+                android:gravity="end"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/raleway_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/group_chat_ll_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="12dp"
+            android:layout_marginStart="80dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@drawable/ic_chat_grey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:gravity="start|center">
+
+                <TextView
+                    android:id="@+id/group_chat_item_txt_receive_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    tools:text="Jackson"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/group_chat_item_txt_receive_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    tools:text="10:00 am"
+                    android:gravity="end"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/raleway_regular"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_chat_item_txt_receive_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:visibility="visible"
+                tools:text="@tools:sample/lorem"
+                android:fontFamily="@font/raleway_regular"/>
+
+            <RelativeLayout
+                android:id="@+id/group_chat_receive_attachment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ui_sqaure_border_white"
+                android:layout_marginStart="8dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivGroupChatReceiveContentType"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/description"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tvGroupChatReceiveContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ivGroupChatReceiveContentType"
+                    android:lines="1"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start|center_horizontal"
+                    android:textSize="16sp"
+                    android:padding="3dp"
+                    android:fontFamily="@font/raleway_regular"/>
+
+                <LinearLayout
+                    android:id="@+id/llGroupChatReceiveAudioPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:background="@drawable/ui_square_border_white"
+                    android:layout_below="@+id/tvGroupChatReceiveContentTitle"
+                    android:layout_toEndOf="@+id/ivGroupChatReceiveContentType">
+
+                    <ImageView
+                        android:id="@+id/ivAdapterGroupReceivePlay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="visible"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_record_play"
+                        android:contentDescription="@string/description" />
+
+                    <ImageView
+                        android:id="@+id/ivAdapterGroupReceivePause"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:layout_marginEnd="8dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_record_pause"
+                        android:contentDescription="@string/description" />
+
+                    <androidx.appcompat.widget.AppCompatSeekBar
+                        android:id="@+id/seekBarGroupReceiveAdapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:thumbTint="@color/white"
+                        android:soundEffectsEnabled="true"
+                        android:progressTint="@color/white"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressGroupChatReceiveContentUpload"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:layout_alignStart="@+id/llGroupChatReceiveAudioPlayer"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/tvGroupChatReceiveContentType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llGroupChatReceiveAudioPlayer"
+                    android:layout_toEndOf="@+id/ivGroupChatReceiveContentType"
+                    android:padding="3dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:text="Type"
+                    android:fontFamily="@font/raleway_regular"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/group_chat_item_img_user_send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_chat_person"
+            android:contentDescription="@string/description" />
+
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideMyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05787037" />
+
+    <FrameLayout android:id="@+id/layoutOtherMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideMyMessage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/group_chat_item_img_user_receive"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_chat_person"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/group_chatItemReceiveAttachmentImg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start|center_vertical"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/description" />
+
+        <LinearLayout
+            android:id="@+id/group_chat_receive_ll_AttachmentImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:minWidth="200dp"
+            android:visibility="gone"
+            android:layout_marginStart="70dp"
+            android:background="@drawable/ic_chat_grey"
+            android:layout_gravity="start|top|center">
+
+            <TextView
+                android:id="@+id/groupChatReceiveAttachmentImgTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="Jackson"
+                android:textSize="15sp"
+                android:fontFamily="@font/raleway_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/groupChatReceiveAttachmentImgTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="10:00 am"
+                android:gravity="end"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/raleway_regular"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/group_chat_ll_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginEnd="80dp"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_bg_chat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideOtherMessage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/group_chat_item_txt_send_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    tools:text="Jack"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/group_chat_item_txt_send_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="10:00 am"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/raleway_regular"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_chat_item_txt_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/raleway_regular"/>
+
+            <RelativeLayout
+                android:id="@+id/group_chat_send_attachment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ui_sqaure_border_grey">
+
+                <ImageView
+                    android:id="@+id/ivGroupChatSendContentType"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:id="@+id/tvGroupChatSendContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/ivGroupChatSendContentType"
+                    android:fontFamily="@font/raleway_regular"
+                    android:gravity="start|center_horizontal"
+                    android:padding="3dp"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/llGroupChatSendAudioPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:background="@drawable/ui_square_border_black"
+                    android:layout_below="@+id/tvGroupChatSendContentTitle"
+                    android:layout_toEndOf="@+id/ivGroupChatSendContentType">
+
+                    <ImageView
+                        android:id="@+id/ivAdapterGroupSendPlay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="visible"
+                        android:tint="@color/grey_deep"
+                        android:src="@drawable/ic_record_play"
+                        android:contentDescription="@string/description" />
+
+                    <ImageView
+                        android:id="@+id/ivAdapterGroupSendPause"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:layout_marginEnd="8dp"
+                        android:tint="@color/grey_deep"
+                        android:src="@drawable/ic_record_pause"
+                        android:contentDescription="@string/description" />
+
+                    <androidx.appcompat.widget.AppCompatSeekBar
+                        android:id="@+id/seekBarGroupSendAdapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:thumbTint="@color/grey_deep"
+                        android:soundEffectsEnabled="true"
+                        android:progressTint="@color/grey_deep"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressGroupChatSendContentUpload"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:layout_alignStart="@+id/llGroupChatSendAudioPlayer"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tvGroupChatSendContentType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llGroupChatSendAudioPlayer"
+                    android:layout_toEndOf="@+id/ivGroupChatSendContentType"
+                    android:padding="2dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:text="Audio"
+                    android:fontFamily="@font/raleway_regular"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideOtherMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

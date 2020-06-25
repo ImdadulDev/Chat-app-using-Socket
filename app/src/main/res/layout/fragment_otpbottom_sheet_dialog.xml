@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/titile_optverification" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/lbl_enterOtp"
+        android:textColor="#141414"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/EDX_OTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="XXXX"
+        android:inputType="number"
+        android:minWidth="@dimen/_100sdp" />
+
+    <TextView
+        android:id="@+id/TXTERROR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/_5sdp"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/BTN_VERIFY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/btn_verify"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/TXT_RESENDOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Resend OTP" />
+</LinearLayout>

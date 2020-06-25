@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout android:id="@+id/layoutOtherMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/chat_item_img_user_send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_chat_person"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/chatItemReceiveAttachmentImg"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="visible"
+            android:padding="10dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:contentDescription="@string/description"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:id="@+id/chat_send_ll_AttachmentImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/chatSendAttachmentImgTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="Jackson"
+                android:textSize="15sp"
+                android:fontFamily="@font/raleway_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/chatSendAttachmentImgTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="10:00 am"
+                android:gravity="end"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/raleway_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_ll_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="12dp"
+            android:layout_marginEnd="70dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@drawable/ic_chat_grey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="start|center">
+
+                <TextView
+                    android:id="@+id/chat_item_txt_receive_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    tools:text="Jackson"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/chat_item_txt_receive_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    tools:text="10:00 am"
+                    android:gravity="end"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/raleway_regular"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_item_txt_receive_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:visibility="gone"
+                tools:text="@tools:sample/lorem"
+                android:fontFamily="@font/raleway_regular"/>
+
+            <RelativeLayout
+                android:id="@+id/chat_receive_attachment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ui_sqaure_border_white"
+                android:layout_marginStart="8dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivChatReceiveContentType"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/description"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tvChatReceiveContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ivChatReceiveContentType"
+                    android:text="Title.mp3"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start|center_horizontal"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:drawableEnd="@drawable/ic_right_fill_arrow_white"/>
+
+                <LinearLayout
+                    android:id="@+id/llChatReceiveAudioPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/ui_square_border_white"
+                    android:layout_below="@+id/tvChatReceiveContentTitle"
+                    android:layout_toEndOf="@+id/ivChatReceiveContentType">
+
+                    <ImageView
+                        android:id="@+id/ivAdapterReceivePlay"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="visible"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_record_play"
+                        android:contentDescription="@string/description" />
+
+                    <ImageView
+                        android:id="@+id/ivAdapterReceivePause"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:layout_marginEnd="8dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_record_pause"
+                        android:contentDescription="@string/description" />
+
+                    <androidx.appcompat.widget.AppCompatSeekBar
+                        android:id="@+id/seekBarReceiveAdapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:thumbTint="@color/white"
+                        android:soundEffectsEnabled="true"
+                        android:progress="30"
+                        android:progressTint="@color/white"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvChatReceiveContentType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llChatReceiveAudioPlayer"
+                    android:layout_toEndOf="@+id/ivChatReceiveContentType"
+                    android:padding="5dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:text="Audio" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

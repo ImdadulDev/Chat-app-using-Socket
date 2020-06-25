@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_splash"
+    tools:context=".views.ui.profile.ProfileViewFragment">
+
+    <ImageView
+        android:id="@+id/IMG_BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+    <RelativeLayout
+        android:id="@+id/RL_TOP"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/IMG_IMAGE"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_user_placeholder" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:src="@drawable/ic_photo_camera_black_24dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RL_TOP">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/bg_rounded_linebox"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EDX_MOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Mobile No."
+                    android:inputType="phone"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#2DD3FC" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_circle_white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_phone_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/bg_rounded_linebox"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EDX_EMAIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Email Id."
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#2DD3FC" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_circle_white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_email_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/bg_rounded_linebox"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EDX_FNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="First name"
+                    android:inputType="text"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#2DD3FC" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_circle_white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_login_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/bg_rounded_linebox"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EDX_LNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="Last name"
+                    android:inputType="text"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#2DD3FC" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_circle_white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_login_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/bg_rounded_linebox"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EDX_USERNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="User name"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#2DD3FC" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_circle_white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_login_icon" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/BTN_Update"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="UPDATE"
+                android:textColor="#091C3D"
+                android:textSize="@dimen/_16sdp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#0000</color>
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+
+    <color name="divider_light">#1000</color>
+    <color name="background_light">@color/white</color>
+    <color name="controls_light">#5F9BB2</color>
+    <color name="text_primary_light">#8A8A8A</color>
+    <color name="text_secondary_light">@color/black</color>
+
+    <color name="divider_dark">#1FFF</color>
+    <color name="background_dark">#151816</color>
+    <color name="controls_dark">#85C4DD</color>
+    <color name="text_primary_dark">#9A9A9A</color>
+    <color name="text_secondary_dark">#E1E1E1</color>
+
+    //chat
+    <color name="username0">#e21400</color>
+    <color name="username1">#91580f</color>
+    <color name="username2">#f8a700</color>
+    <color name="username3">#f78b00</color>
+    <color name="username4">#58dc00</color>
+    <color name="username5">#287b00</color>
+    <color name="username6">#a8f07a</color>
+    <color name="username7">#4ae8c4</color>
+    <color name="username8">#3b88eb</color>
+    <color name="username9">#3824aa</color>
+    <color name="username10">#a700ff</color>
+    <color name="username11">#d300e7</color>
+
+    <color name="grey_10">#EDEDED</color>
+    <color name="sky_light_10">#e4ebf4</color>
+
+</resources>

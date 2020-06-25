@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "13a82e2d5d7e3d2fb801e9cd77b42a35",
+    "entities": [
+      {
+        "tableName": "ContactEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`mobile_no` TEXT NOT NULL, `display_mobile_no` TEXT, `display_name` TEXT, `quickblox_id` TEXT, `twilio_id` TEXT, `is_cbc_backedup` INTEGER NOT NULL, `cbc_id` TEXT NOT NULL, PRIMARY KEY(`mobile_no`))",
+        "fields": [
+          {
+            "fieldPath": "mobile_no",
+            "columnName": "mobile_no",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "display_mobile_no",
+            "columnName": "display_mobile_no",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "display_name",
+            "columnName": "display_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "quickblox_id",
+            "columnName": "quickblox_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "twilio_id",
+            "columnName": "twilio_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "is_cbc_backedup",
+            "columnName": "is_cbc_backedup",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cbc_id",
+            "columnName": "cbc_id",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "mobile_no"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '13a82e2d5d7e3d2fb801e9cd77b42a35')"
+    ]
+  }
+}

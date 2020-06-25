@@ -1,0 +1,77 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0x00007fca71052842, pid=4812, tid=0x00007fc9e7efe700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_202) (build 1.8.0_202-release-1483-b49-5587405)
+# Java VM: OpenJDK 64-Bit Server VM (25.202-b49-5587405 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# v  ~StubRoutines::jlong_disjoint_arraycopy
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fca14022000):  JavaThread "Execution worker for ':' Thread 2" [_thread_in_Java, id=18490, stack(0x00007fc9e7dfe000,0x00007fc9e7eff000)]
+
+siginfo: si_signo: 7 (SIGBUS), si_code: 2 (BUS_ADRERR), si_addr: 0x00000000ead34000
+
+Registers:
+RAX=0x0000000000063d31, RBX=0x00000000eaa34030, RCX=0x00000000ead737c8, RDX=0xffffffffffff8107
+RSP=0x00007fc9e7efac60, RBP=0x00007fc9e7efac60, RSI=0x00000000eaa54e48, RDI=0x00000000ea902418
+R8 =0x00000000001f4ffe, R9 =0x000000000018f4c4, R10=0x00007fca71052800, R11=0x00000000ea5e3a98
+R12=0x0000000000000000, R13=0x00000000eaa54e48, R14=0x00007fc9e7efad28, R15=0x00007fca14022000
+RIP=0x00007fca71052842, EFLAGS=0x0000000000010292, CSGSFS=0x002b000000000033, ERR=0x0000000000000006
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fc9e7efac60)
+0x00007fc9e7efac60:   00000000eaa54e38 00007fca712f4776
+0x00007fc9e7efac70:   ea5e3a880018f4c4 000000000031e99f
+0x00007fc9e7efac80:   00000000ea5e3a88 000000000031e998
+0x00007fc9e7efac90:   00007fc9e7efad08 00007fca001f4ffe
+0x00007fc9e7efaca0:   00007fca71007ffd 00000000000003e8
+0x00007fc9e7efacb0:   00007fc9e7efad18 00007fca71007d80
+0x00007fc9e7efacc0:   00000000ea0e40a0 00007fca71007d80
+0x00007fc9e7efacd0:   00000000ea0e40b8 00007fc9e7efacd8
+0x00007fc9e7eface0:   00007fca103392ec 00007fc9e7efad28
+0x00007fc9e7efacf0:   00007fca10339378 00007fca1033a0b0
+0x00007fc9e7efad00:   00007fca10339308 00007fc9e7efacd0
+0x00007fc9e7efad10:   00007fc9e7efad28 00007fc9e7efad70
+0x00007fc9e7efad20:   00007fca71007d80 00000000ea0e40a0
+0x00007fc9e7efad30:   00007fc9e7efad30 00007fca12c57a17
+0x00007fc9e7efad40:   00007fc9e7efad98 00007fca12c59658
+0x00007fc9e7efad50:   00007fca102d6e70 00007fca12c57a58
+0x00007fc9e7efad60:   00007fc9e7efad28 00007fc9e7efad90
+0x00007fc9e7efad70:   00007fc9e7efade0 00007fca71007d80
+0x00007fc9e7efad80:   00000000ea0e48b0 00000000ea0e40a0
+0x00007fc9e7efad90:   0000000000000000 00000000e9a14bf8
+0x00007fc9e7efada0:   00007fc9e7efada0 00007fca12c5795a
+0x00007fc9e7efadb0:   00007fc9e7efadf0 00007fca12c59658
+0x00007fc9e7efadc0:   00007fca102d6cc8 00007fca12c57978
+0x00007fc9e7efadd0:   00007fc9e7efad90 00007fc9e7efadf0
+0x00007fc9e7efade0:   00007fc9e7efae38 00007fca71007d80
+0x00007fc9e7efadf0:   00000000e9a14bf8 00007fc9e7efadf8
+0x00007fc9e7efae00:   00007fca1221412f 00007fc9e7efae90
+0x00007fc9e7efae10:   00007fca102acfd0 0000000000000000
+0x00007fc9e7efae20:   00007fca12214288 00007fc9e7efadf0
+0x00007fc9e7efae30:   00007fc9e7efae78 00007fc9e7efaed8
+0x00007fc9e7efae40:   00007fca71007ffd 00000000ea0a2e30
+0x00007fc9e7efae50:   00000000e5e13778 00000000e9a14d48 
+
+Instructions: (pc=0x00007fca71052842)
+0x00007fca71052822:   c2 75 f1 48 33 c0 c9 c3 66 0f 1f 44 00 00 c5 fe
+0x00007fca71052832:   6f 44 d7 c8 c5 fe 7f 44 d1 c8 c5 fe 6f 4c d7 e8
+0x00007fca71052842:   c5 fe 7f 4c d1 e8 48 83 c2 08 7e e2 48 83 ea 04
+0x00007fca71052852:   7f 10 c5 fe 6f 44 d7 e8 c5 fe 7f 44 d1 e8 48 83 
+
+Register to memory mapping:
+
+RAX=0x0000000000063d31 is an unknown value
+RBX=0x00000000eaa34030 is an oop
+java.lang.String 
+ - klass: 'java/lang/String'
+RCX=0x00000000ead737c8 is an oop

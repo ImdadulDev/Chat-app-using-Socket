@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.ui.settings.SettingsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BTN_CHANGE_PASS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:text="Change password"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15sdp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/CALL_CBC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_telephone_cbc_sky_15dp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:padding="@dimen/_15sdp"
+            android:text="CBC Call"
+            android:textColor="#0759B9"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/cardview_shadow_start_color" />
+
+    <LinearLayout
+        android:id="@+id/CALL_PHONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_call_answer_sky_15dp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:padding="@dimen/_15sdp"
+            android:text="Phone Call"
+            android:textColor="#0759B9"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+</LinearLayout>

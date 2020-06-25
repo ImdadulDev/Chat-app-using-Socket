@@ -1,0 +1,34 @@
+<resources>
+    <string name="picker_app_name">Picker</string>
+    <string name="picker_gallery">Gallery</string>
+    <string name="picker_camera">Camera</string>
+    <string name="picker_select">Select</string>
+    <string name="picker_media_permissions_hint">Grant media permission for easier\ngallery access</string>
+    <string name="picker_empty_media">Your media library is empty</string>
+    <string name="picker_allow">Allow</string>
+    <string name="picker_select_photo">Select photo</string>
+    <string name="picker_no_camera">No camera app is installed</string>
+    <string name="picker_max_selection_reached">You can pick only %d images</string>
+    <plurals name="picker_selected_count">
+        <item quantity="one">%d photo selected</item>
+        <item quantity="other">%d photos selected</item>
+    </plurals>
+
+    <string name="action_leave">Leave</string>
+    <string name="action_send">Send</string>
+    <string name="prompt_message">Message</string>
+
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Please check your internet connection</string>
+    <string name="error_connect">Failed to connect</string>
+
+    <!-- messages -->
+    <string name="message_welcome">Welcome to Socket.IO Chat –</string>
+    <plurals name="message_participants">
+        <item quantity="one">there\'s %d participant</item>
+        <item quantity="other">there are %d participants</item>
+    </plurals>
+    <string name="message_user_joined">%s joined</string>
+    <string name="message_user_left">%s left</string>
+    <string name="user_action_typing">is typing</string>
+</resources>
